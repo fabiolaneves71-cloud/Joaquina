@@ -158,6 +158,8 @@
       return l ? '<p style="margin:3px 0">' + l + '</p>' : '';
     }).join('');
     t = t.replace(/(<li>[\s\S]*?<\/li>)+/g, '<ul style="margin:4px 0;padding-left:16px">$&</ul>');
+    t = t.replace(/(https:\/\/wa\.me\/[^\s<"]+)/g, '<a href="$1" target="_blank" style="color:#d4a437;font-weight:500;text-decoration:none">(48) 98457-5899</a>');
+    t = t.replace(/(https?:\/\/(?!wa\.me)[^\s<"]+)/g, '<a href="$1" target="_blank" style="color:#d4a437;text-decoration:none;font-weight:500">Acessar formulário</a>');
     return t;
   }
 
