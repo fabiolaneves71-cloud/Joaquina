@@ -1,6 +1,6 @@
 {
   "name": "floripa-ticket-widget",
   "version": "1.0.0",
-  "description": "Assistente de atendimento ao cliente do Floripa Ticket",
-  "engines": { "node": "18.x" }
+  "description": "Assistente Joaquina - Floripa Ticket",
+  "engines": { "node": "24.x" }
 }
