@@ -21,6 +21,7 @@
       box-shadow: 0 12px 40px rgba(0,0,0,0.22);
       display: none; flex-direction: column;
       font-family: Arial, sans-serif; background: #fff;
+      max-height: calc(100vh - 140px);
     }
     #ft-widget-box.open { display: flex; }
     #ft-widget-header {
@@ -45,7 +46,7 @@
     }
     #ft-widget-close:hover { color: #fff; }
     #ft-widget-messages {
-      flex: 1; height: 320px; overflow-y: auto;
+      flex: 1; height: 320px; min-height: 0; overflow-y: auto; overflow-x: hidden; scroll-behavior: smooth;
       padding: 16px; background: #faf9fc;
       display: flex; flex-direction: column; gap: 8px;
     }
@@ -54,7 +55,7 @@
     .ft-msg.bot  { justify-content: flex-start; }
     .ft-bubble {
       max-width: 82%; padding: 10px 13px; font-size: 13px; line-height: 1.5;
-      border-radius: 14px;
+      border-radius: 14px; word-wrap: break-word; overflow-wrap: break-word; min-width: 0;
     }
     .ft-msg.user .ft-bubble {
       background: #1E1B2E; color: #fff;
